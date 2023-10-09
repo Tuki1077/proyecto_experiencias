@@ -1,0 +1,39 @@
+version: "3.8"
+services:
+  frontend:
+    build:
+      context: ./frontend # Ruta al directorio del front-end
+    ports:
+      - "80:80"
+    networks:
+      - frontend
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: ./backend # Ruta al directorio del back-end
+    ports:
+      - "3000:3000" # Puerto del servidor del back-end
+    networks:
+      - backend
+    depends_on:
+      - database
+  database:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - "5432:5432" # Puerto de la base de datos
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    networks:
+      - backend
+
+volumes:
+  postgres_data:
+
+networks:
+  frontend:
+  backend:
