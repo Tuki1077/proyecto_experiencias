@@ -1,15 +1,8 @@
-FROM node:14
-
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
-COPY . .
-
-RUN npm run build
-
+FROM --platform=linux/amd64 node:16-alpine
+WORKDIR /app/
+COPY public/ /app/public
+COPY src/ /app/src
+COPY package*.json /app/
+RUN yarn install
 EXPOSE 3000
-
-CMD ["npm", "start"]
+CMD ["yarn", "run", "start"]
