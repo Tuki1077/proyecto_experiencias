@@ -14,7 +14,7 @@ function UniqueExperiece() {
   useEffect(() => {
     const getUniqueExp = async () => {
       const { data } = await getAxios(
-        `http://34.67.221.67:8080/experiences/${Number(idExp)}`
+        `http://3.87.209.149:8080/experiences/${Number(idExp)}`
       );
 
       setUniqueExp(data);

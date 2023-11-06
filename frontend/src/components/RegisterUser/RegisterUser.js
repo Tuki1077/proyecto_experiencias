@@ -31,7 +31,7 @@ function RegisterUser() {
       };
 
       if (password === password2) {
-        await postAxios('http://34.67.221.67:8080/users', body);
+        await postAxios('http://3.87.209.149:8080/users', body);
         history.push({
           pathname: '/register-validate',
           email,

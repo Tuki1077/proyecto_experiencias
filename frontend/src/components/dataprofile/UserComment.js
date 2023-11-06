@@ -21,14 +21,14 @@ function UserComment({ idBooking, updateDataBooking }) {
       };
 
       const { status } = await putAxios(
-        `http://34.67.221.67:8080/bookings/${idBooking}/comments`,
+        `http://3.87.209.149:8080/bookings/${idBooking}/comments`,
         body,
         token
       );
 
       if (status === 200) {
         const { data } = await getAxios(
-          `http://34.67.221.67:8080/bookings/${tokenContent.idUser}/bookings`,
+          `http://3.87.209.149:8080/bookings/${tokenContent.idUser}/bookings`,
           token
         );
         updateDataBooking(data);

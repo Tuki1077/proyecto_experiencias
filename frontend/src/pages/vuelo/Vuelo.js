@@ -40,7 +40,7 @@ function Vuelo() {
       });
 
     const urlFiltered = queryString.stringifyUrl({
-      url: 'http://34.67.221.67:8080/experiences?cat=Vuelo',
+      url: 'http://3.87.209.149:8080/experiences?cat=Vuelo',
       query: {
         order: `${orderType}`,
         orderDir: `${orderDirection}`,

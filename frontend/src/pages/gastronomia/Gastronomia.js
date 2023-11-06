@@ -40,7 +40,7 @@ function Gastronomia() {
       });
 
     const urlFiltered = queryString.stringifyUrl({
-      url: 'http://34.67.221.67:8080/experiences?cat=Gastronomia',
+      url: 'http://3.87.209.149:8080/experiences?cat=Gastronomia',
       query: {
         order: `${orderType}`,
         orderDir: `${orderDirection}`,
