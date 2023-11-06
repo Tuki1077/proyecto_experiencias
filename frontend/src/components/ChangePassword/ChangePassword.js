@@ -25,7 +25,7 @@ function ChangePassword() {
       };
 
       if (pass === repeatPass) {
-        await putAxios('http://3.87.209.149:8080/users/password/reset', body);
+        await putAxios('http://34.67.221.67:8080/users/password/reset', body);
         history.push('/');
       }
     } catch (error) {

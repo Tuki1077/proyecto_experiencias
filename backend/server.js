@@ -130,5 +130,5 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () =>
-    console.log(`Server listening at http://3.87.209.149:${PORT}`)
+    console.log(`Server listening at http://34.67.221.67:${PORT}`)
 );

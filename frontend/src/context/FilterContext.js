@@ -8,7 +8,7 @@ export const FilterProvider = ({ children }) => {
   useEffect(() => {
     async function getCities() {
       try {
-        const { data } = await axios.get('http://3.87.209.149:8080/experiences');
+        const { data } = await axios.get('http://34.67.221.67:8080/experiences');
         const allCities = data.data.map((city) => city.ciudad);
         setCities(allCities.filter(onlyUnique).sort());
       } catch (error) {

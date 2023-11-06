@@ -35,14 +35,14 @@ Creado en React.js, hemos usado algunas dependencias como:
 
 -   [npm install] Instala todas las dependencias necesarias para el correcto funcionamiento del sitio.
 -   [npm run sql] Ejecuta el script que crea la base de datos, las tablas, y los datos necesarios.
--   [npm run dev] Ejecuta el servidor para poder trabajar, http://3.87.209.149:PORT con el fin de que cors funcione correctamente recomendamos el puerto: 8080
+-   [npm run dev] Ejecuta el servidor para poder trabajar, http://34.67.221.67:PORT con el fin de que cors funcione correctamente recomendamos el puerto: 8080
 
 ### Ejecución del Frontend
 
 -   Para iniciar el frontend necesitamos tener como gestor de dependencias "yarn", nos situaremos en la raiz de frontend y ejecutaremos en un terminal los siguientes comandos:
 
 -   [yarn] Para instalar todo lo necesario para poder probar la aplicación.
--   [yarn start] Ejecuta el servidor para poder trabajar, http://3.87.209.149:PORT con el fin de que cors funcione correctamente recomendamos el puerto: 3000
+-   [yarn start] Ejecuta el servidor para poder trabajar, http://34.67.221.67:PORT con el fin de que cors funcione correctamente recomendamos el puerto: 3000
 
 ## Composición del Backend
 

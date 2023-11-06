@@ -78,19 +78,19 @@ function AdminExperiencesItem({ experience, updateDataExp, categories }) {
       try {
         if (files?.length > 0) {
           await postAxios(
-            `http://3.87.209.149:8080/experiences/${experience.id}/photo`,
+            `http://34.67.221.67:8080/experiences/${experience.id}/photo`,
             payload,
             token
           );
         }
         const { status } = await putAxios(
-          `http://3.87.209.149:8080/experiences/${experience.id}`,
+          `http://34.67.221.67:8080/experiences/${experience.id}`,
           body,
           token
         );
 
         if (status === 200) {
-          const { data } = await getAxios('http://3.87.209.149:8080/experiences');
+          const { data } = await getAxios('http://34.67.221.67:8080/experiences');
           updateDataExp(data);
         }
         setFormActivate(!formActivate);
@@ -103,7 +103,7 @@ function AdminExperiencesItem({ experience, updateDataExp, categories }) {
   async function deletePhoto(idExp, idPhoto) {
     try {
       const { data } = await deleteAxios(
-        `http://3.87.209.149:8080/experiences/${idExp}/photo/${idPhoto}`,
+        `http://34.67.221.67:8080/experiences/${idExp}/photo/${idPhoto}`,
         token
       );
       setExpPhoto(data.photos);
@@ -120,12 +120,12 @@ function AdminExperiencesItem({ experience, updateDataExp, categories }) {
 
       if (doYouDelete) {
         const { status } = await deleteAxios(
-          `http://3.87.209.149:8080/experiences/${experience.id}`,
+          `http://34.67.221.67:8080/experiences/${experience.id}`,
           token
         );
 
         if (status === 200) {
-          const { data } = await getAxios('http://3.87.209.149:8080/experiences');
+          const { data } = await getAxios('http://34.67.221.67:8080/experiences');
           updateDataExp(data);
         }
       }
