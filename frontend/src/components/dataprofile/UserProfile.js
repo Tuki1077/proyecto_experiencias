@@ -56,21 +56,21 @@ function UserProfile() {
           photo.append('avatar', file);
 
           await putAxios(
-            `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/users/${tokenContent?.idUser}`,
+            `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/users/${tokenContent?.idUser}`,
             photo,
             token
           );
         }
 
         const { data } = await putAxios(
-          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/users/${tokenContent?.idUser}`,
+          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/users/${tokenContent?.idUser}`,
           body,
           token
         );
 
         setUserInfo({
           ...data,
-          avatar: `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/uploads/${data.avatar}`,
+          avatar: `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/uploads/${data.avatar}`,
         });
       }
     } catch (error) {

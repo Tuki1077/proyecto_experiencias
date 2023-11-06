@@ -21,14 +21,14 @@ function UserComment({ idBooking, updateDataBooking }) {
       };
 
       const { status } = await putAxios(
-        `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/bookings/${idBooking}/comments`,
+        `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/bookings/${idBooking}/comments`,
         body,
         token
       );
 
       if (status === 200) {
         const { data } = await getAxios(
-          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/bookings/${tokenContent.idUser}/bookings`,
+          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/bookings/${tokenContent.idUser}/bookings`,
           token
         );
         updateDataBooking(data);

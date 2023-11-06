@@ -10,7 +10,7 @@ function AdminExperiences() {
   useEffect(() => {
     async function getInfoExperiences() {
       try {
-        const { data } = await getAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences');
+        const { data } = await getAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences');
         const categories = data.map((category) => category.categoria);
         const allCategories = categories.filter(onlyUnique);
         setCategories(allCategories);

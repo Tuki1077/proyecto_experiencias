@@ -52,7 +52,7 @@ function Shop() {
           idExp: item.exp.id,
           units,
         };
-        await postAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/bookings', booking, token);
+        await postAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/bookings', booking, token);
       }
     } catch (error) {
       setError(error.response.data.message);

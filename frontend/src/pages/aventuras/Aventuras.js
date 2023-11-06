@@ -40,7 +40,7 @@ function Aventura() {
       });
 
     const urlFiltered = queryString.stringifyUrl({
-      url: 'http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences?cat=Aventura',
+      url: 'http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences?cat=Aventura',
       query: {
         order: `${orderType}`,
         orderDir: `${orderDirection}`,

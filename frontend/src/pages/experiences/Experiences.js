@@ -46,7 +46,7 @@ function Experiences() {
       });
 
     let urlFiltered = queryString.stringifyUrl({
-      url: 'http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences',
+      url: 'http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences',
       query: {
         searchExp: `${
           searchParams.has('searchExp') ? searchParams.get('searchExp') : ''

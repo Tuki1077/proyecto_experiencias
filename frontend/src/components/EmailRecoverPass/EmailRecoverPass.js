@@ -17,7 +17,7 @@ function EmailRecoverPass() {
     try {
       e.preventDefault();
 
-      await putAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/users/password/recover', body);
+      await putAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/users/password/recover', body);
 
       setContent(!content);
     } catch (error) {

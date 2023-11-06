@@ -40,7 +40,7 @@ function Vuelo() {
       });
 
     const urlFiltered = queryString.stringifyUrl({
-      url: 'http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences?cat=Vuelo',
+      url: 'http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences?cat=Vuelo',
       query: {
         order: `${orderType}`,
         orderDir: `${orderDirection}`,

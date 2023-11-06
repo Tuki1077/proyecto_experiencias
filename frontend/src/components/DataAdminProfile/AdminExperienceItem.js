@@ -78,19 +78,19 @@ function AdminExperiencesItem({ experience, updateDataExp, categories }) {
       try {
         if (files?.length > 0) {
           await postAxios(
-            `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences/${experience.id}/photo`,
+            `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences/${experience.id}/photo`,
             payload,
             token
           );
         }
         const { status } = await putAxios(
-          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences/${experience.id}`,
+          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences/${experience.id}`,
           body,
           token
         );
 
         if (status === 200) {
-          const { data } = await getAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences');
+          const { data } = await getAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences');
           updateDataExp(data);
         }
         setFormActivate(!formActivate);
@@ -103,7 +103,7 @@ function AdminExperiencesItem({ experience, updateDataExp, categories }) {
   async function deletePhoto(idExp, idPhoto) {
     try {
       const { data } = await deleteAxios(
-        `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences/${idExp}/photo/${idPhoto}`,
+        `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences/${idExp}/photo/${idPhoto}`,
         token
       );
       setExpPhoto(data.photos);
@@ -120,12 +120,12 @@ function AdminExperiencesItem({ experience, updateDataExp, categories }) {
 
       if (doYouDelete) {
         const { status } = await deleteAxios(
-          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences/${experience.id}`,
+          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences/${experience.id}`,
           token
         );
 
         if (status === 200) {
-          const { data } = await getAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences');
+          const { data } = await getAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences');
           updateDataExp(data);
         }
       }
