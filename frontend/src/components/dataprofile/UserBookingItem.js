@@ -42,14 +42,14 @@ function UserRatingBookingItem({ bookingInfo, updateDataBooking, labelName }) {
       };
 
       const { status } = await putAxios(
-        `http://34.67.221.67:8080/bookings/${bookingInfo?.id}/rating`,
+        `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/bookings/${bookingInfo?.id}/rating`,
         body,
         token
       );
 
       if (status === 200) {
         const { data } = await getAxios(
-          `http://34.67.221.67:8080/bookings/${tokenContent.idUser}/bookings`,
+          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/bookings/${tokenContent.idUser}/bookings`,
           token
         );
         updateDataBooking(data);

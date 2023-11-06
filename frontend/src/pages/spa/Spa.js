@@ -41,7 +41,7 @@ function Spa() {
       });
 
     const urlFiltered = queryString.stringifyUrl({
-      url: 'http://34.67.221.67:8080/experiences?cat=Relax',
+      url: 'http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences?cat=Relax',
       query: {
         order: `${orderType}`,
         orderDir: `${orderDirection}`,
