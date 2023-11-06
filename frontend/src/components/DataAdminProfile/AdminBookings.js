@@ -11,7 +11,7 @@ function AdminBookings() {
     async function getAllBookings() {
       try {
         const { data } = await getAxios(
-          `http://localhost:8080/bookings`,
+          `http://34.67.221.67:8080/bookings`,
           token
         );
 

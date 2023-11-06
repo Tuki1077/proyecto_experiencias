@@ -9,7 +9,7 @@ const path = require('path');
 const { PORT } = process.env;
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'http://34.67.221.67:3000',
 };
 
 // ##################
@@ -130,5 +130,5 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () =>
-    console.log(`Server listening at http://localhost:${PORT}`)
+    console.log(`Server listening at http://34.67.221.67:${PORT}`)
 );

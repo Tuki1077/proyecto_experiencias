@@ -31,7 +31,7 @@ function UserProfileMain() {
         });
       } else {
         await deleteAxios(
-          `http://localhost:8080/users/${tokenContent?.idUser}`,
+          `http://34.67.221.67:8080/users/${tokenContent?.idUser}`,
           token
         );
         logout();

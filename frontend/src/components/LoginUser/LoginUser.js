@@ -28,7 +28,7 @@ function LoginUser() {
         };
 
         const { data } = await postAxios(
-          'http://localhost:8080/users/login',
+          'http://34.67.221.67:8080/users/login',
           body
         );
         setToken(data.token);

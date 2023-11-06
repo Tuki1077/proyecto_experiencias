@@ -29,7 +29,7 @@ const recoverUserPassword = async (req, res, next) => {
             
             Se solicitó un cambio de contraseña para el usuario registrado con este email en la plataforma VAN Experiences.
 
-            El código de recuperación es: http://localhost:3000/reset-pass/${recoverCode}
+            El código de recuperación es: http://34.67.221.67:3000/reset-pass/${recoverCode}
 
             Si no has sido tu por favor, ignora este email.
 

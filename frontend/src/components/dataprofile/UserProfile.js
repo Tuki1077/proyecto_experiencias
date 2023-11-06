@@ -56,21 +56,21 @@ function UserProfile() {
           photo.append('avatar', file);
 
           await putAxios(
-            `http://localhost:8080/users/${tokenContent?.idUser}`,
+            `http://34.67.221.67:8080/users/${tokenContent?.idUser}`,
             photo,
             token
           );
         }
 
         const { data } = await putAxios(
-          `http://localhost:8080/users/${tokenContent?.idUser}`,
+          `http://34.67.221.67:8080/users/${tokenContent?.idUser}`,
           body,
           token
         );
 
         setUserInfo({
           ...data,
-          avatar: `http://localhost:8080/uploads/${data.avatar}`,
+          avatar: `http://34.67.221.67:8080/uploads/${data.avatar}`,
         });
       }
     } catch (error) {

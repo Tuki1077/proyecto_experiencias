@@ -10,7 +10,7 @@ function Comments({ comment }) {
     async function getComment_Rating() {
       try {
         const { data } = await getAxios(
-          `http://localhost:8080/bookings/comments-ratings/${comment.id}`
+          `http://34.67.221.67:8080/bookings/comments-ratings/${comment.id}`
         );
         setAppreciationComment(data);
       } catch (error) {

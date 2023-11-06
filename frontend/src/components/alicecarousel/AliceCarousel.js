@@ -23,7 +23,7 @@ function Carousel() {
     async function getExperience() {
       try {
         const { data } = await getAxios(
-          `http://localhost:8080/experiences?random=10`
+          `http://34.67.221.67:8080/experiences?random=10`
         );
 
         setAllExperiences(data);

@@ -26,13 +26,13 @@ export const UserProvider = ({ children }) => {
         const decoded = jwt_decode(token);
         setTokenContent(decoded);
         const { data } = await getAxios(
-          `http://localhost:8080/users/${decoded.idUser}`,
+          `http://34.67.221.67:8080/users/${decoded.idUser}`,
           token
         );
         setUserInfo({
           ...data,
           avatar: data.avatar
-            ? `http://localhost:8080/uploads/${data.avatar}`
+            ? `http://34.67.221.67:8080/uploads/${data.avatar}`
             : null,
         });
       } catch (error) {

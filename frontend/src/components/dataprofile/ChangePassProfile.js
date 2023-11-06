@@ -22,7 +22,7 @@ function ChangePassProfile({ activate, onHideActivate }) {
         setError('Las contraseñas deben coincidir');
       } else {
         await putAxios(
-          `http://localhost:8080/users/${tokenContent?.idUser}/password`,
+          `http://34.67.221.67:8080/users/${tokenContent?.idUser}/password`,
           dataPass,
           token
         );
