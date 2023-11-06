@@ -11,7 +11,7 @@ function UserBookings() {
     async function getUserBookings() {
       try {
         const { data } = await getAxios(
-          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/bookings/${tokenContent.idUser}/bookings`,
+          `https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/bookings/${tokenContent.idUser}/bookings`,
           token
         );
         setUserBookings(data);

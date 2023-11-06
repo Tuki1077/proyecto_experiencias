@@ -130,5 +130,5 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () =>
-    console.log(`Server listening at http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:${PORT}`)
+    console.log(`Server listening at https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com`)
 );

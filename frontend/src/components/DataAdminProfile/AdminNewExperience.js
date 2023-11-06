@@ -44,7 +44,7 @@ function AdminNeWExperience() {
   };
 
   async function getCategories() {
-    const { data } = await getAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences');
+    const { data } = await getAxios('https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences');
     const categories = data.map((category) => category.categoria);
     const allCategories = categories.filter(onlyUnique);
     setCategory(allCategories);
@@ -73,7 +73,7 @@ function AdminNeWExperience() {
 
     async function performNewExperience() {
       try {
-        await postAxios('http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences', payload, token);
+        await postAxios('https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences', payload, token);
 
         history.go(0);
       } catch (error) {

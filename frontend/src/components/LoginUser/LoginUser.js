@@ -28,7 +28,7 @@ function LoginUser() {
         };
 
         const { data } = await postAxios(
-          'http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/users/login',
+          'https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/users/login',
           body
         );
         setToken(data.token);

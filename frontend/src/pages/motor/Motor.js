@@ -41,7 +41,7 @@ function Motor() {
       });
 
     const urlFiltered = queryString.stringifyUrl({
-      url: 'http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences?cat=Motor',
+      url: 'https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences?cat=Motor',
       query: {
         order: `${orderType}`,
         orderDir: `${orderDirection}`,

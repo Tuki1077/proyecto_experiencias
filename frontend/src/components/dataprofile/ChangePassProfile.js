@@ -22,7 +22,7 @@ function ChangePassProfile({ activate, onHideActivate }) {
         setError('Las contraseñas deben coincidir');
       } else {
         await putAxios(
-          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/users/${tokenContent?.idUser}/password`,
+          `https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/users/${tokenContent?.idUser}/password`,
           dataPass,
           token
         );

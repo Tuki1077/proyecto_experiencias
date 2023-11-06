@@ -23,7 +23,7 @@ function Carousel() {
     async function getExperience() {
       try {
         const { data } = await getAxios(
-          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com:8080/experiences?random=10`
+          `https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/experiences?random=10`
         );
 
         setAllExperiences(data);

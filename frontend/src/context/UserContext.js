@@ -26,13 +26,13 @@ export const UserProvider = ({ children }) => {
         const decoded = jwt_decode(token);
         setTokenContent(decoded);
         const { data } = await getAxios(
-          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/users/${decoded.idUser}`,
+          `https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/users/${decoded.idUser}`,
           token
         );
         setUserInfo({
           ...data,
           avatar: data.avatar
-            ? `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/uploads/${data.avatar}`
+            ? `https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/uploads/${data.avatar}`
             : null,
         });
       } catch (error) {

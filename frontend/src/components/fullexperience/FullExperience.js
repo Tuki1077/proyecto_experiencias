@@ -46,7 +46,7 @@ function FullExperience({ data }) {
     if (bookingDate !== '') {
       async function getParticipants() {
         const { data } = await axios.get(
-          `http://https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/bookings/state/${
+          `https://bf8t0s9gnh.execute-api.us-east-1.amazonaws.com/bookings/state/${
             infoActive?.id
           }/${sqlDateFormat(dateClientSelect)}`
         );
